@@ -1,0 +1,15 @@
+#sobre {
+    padding: 100px 550px;
+    text-align: justify;
+    height: 80vh;
+}
+
+#titulo-page-sobre {
+    color: black;
+    font-size: 3em;
+    margin-bottom: 5px;
+}
+
+#div-textos-sobre {
+    color: black;
+}
