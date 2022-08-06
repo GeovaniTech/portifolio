@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --primary-color: #012677;
+    --primary-hover: #04349c;
+}
+
+section {
+    height: 100vh;
+}

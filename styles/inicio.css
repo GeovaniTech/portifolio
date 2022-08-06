@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+header {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    background-color: white;
+    padding: 10px;
+    border: 1px;
+    border-color: rgb(223, 223, 223);
+    border-bottom-style: solid;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+}
+
+nav a:hover {
+    color: var(--primary-hover);
+}
+
+#btn-contato {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+#btn-contato:hover {
+    background-color: var(--primary-hover);
+}
+
+#div-titulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+#img-eu {
+    width: 500px;
+}
+
+#div-img {
+    text-align: center;
+}
+
+#infos-inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+#inicio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#meu-nome {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+#seu-dev {
+    font-size: 1.3em;
+    margin-bottom: 15px;
+}
+
+.redes-sociais {
+    text-decoration: none;
+}
+
+.redes-sociais * {
+    width: 40px;
+    height: 40px;
+    margin-inline: 5px;
+}
+
+#ola {
+    padding: 8px;
+    background-color: var(--primary-color);
+    color: white;
+    width: 211px;
+    border-radius: 3px;
+    margin-bottom: 7px;
+}
