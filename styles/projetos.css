@@ -1,0 +1,39 @@
+#projetos {
+    height: 100%;
+    background-color: black;
+    color: white;
+}
+
+#container-projetos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#titulo-page-projeto {
+    color: white;
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#card-projeto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+}
+
+#div-img-projeto {
+    width: 600px;
+}
+
+#img-projeto {
+    width: 100%;
+}   
