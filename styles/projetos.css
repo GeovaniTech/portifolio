@@ -19,7 +19,7 @@
     text-align: center;
 }
 
-#card-projeto {
+.card-projeto {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,10 +30,10 @@
     color: white;
 }
 
-#div-img-projeto {
+.div-img-projeto {
     width: 600px;
 }
 
-#img-projeto {
+.div-img-projeto > img {
     width: 100%;
-}   
+}
