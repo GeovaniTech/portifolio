@@ -1,7 +1,7 @@
 #sobre {
-    padding: 100px 550px;
+    padding: 100px 300px;
     text-align: justify;
-    height: 80vh;
+    height: 100vh;
 }
 
 #titulo-page-sobre {
@@ -12,4 +12,12 @@
 
 #div-textos-sobre {
     color: black;
+}
+
+@media only screen and (max-width: 1165px) {
+    #sobre {
+        width: 100%;
+        text-align: center;
+        height: 100vh;
+    }
 }
