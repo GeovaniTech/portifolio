@@ -63,9 +63,18 @@
 
 #ola {
     padding: 8px;
+    position: relative;
     background-color: var(--primary-color);
     color: white;
     width: 211px;
     border-radius: 3px;
     margin-bottom: 7px;
+    animation-name: ola;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+@keyframes ola {
+    0%   {left: -300px}
+    100% {left: 0;}
 }

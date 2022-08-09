@@ -2,13 +2,14 @@
     height: 100%;
     background-color: black;
     color: white;
+    padding-top: 93px;
 }
 
 #container-projetos {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -31,9 +32,14 @@
 }
 
 .div-img-projeto {
-    width: 600px;
+    width: 680px;
 }
 
 .div-img-projeto > img {
     width: 100%;
+    border-radius: 7px;
+}
+
+.div-infos-projeto {
+    margin: 10px;
 }
