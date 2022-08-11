@@ -32,10 +32,10 @@
     </header>
 
     <main>
-        <section id="inicio">
+        <section  id="inicio" data-anime="left">
             <div id="infos-inicio">
                 <div>
-                    <p id="ola">Olá, Seja Bem-vindo(a)!</p>
+                    <p id="ola" data-anime="left">Olá, Seja Bem-vindo(a)!</p>
                     <p id="meu-nome">Me chamo Geovani Debastiani</p>
                 </div>
                 <div>
@@ -53,7 +53,7 @@
             </div>
         </section>
 
-        <section id="sobre">
+        <section id="sobre" data-anime="right">
             <div>
                 <h2 id="titulo-page-sobre">Sobre <span style="color: var(--primary-color);">Mim</span></h2>
             </div>
@@ -71,7 +71,7 @@
             </div>
         </section>
 
-        <section id="tecnologias">
+        <section id="tecnologias" data-anime="left">
             <div>
                 <h2 class="titulo-page"><span style="color: var(--primary-color);">Tecnologias</span> que utilizo atualmente</h2>
             </div>
@@ -104,7 +104,7 @@
             </div>
         </section>
 
-        <section id="projetos">
+        <section id="projetos" data-anime="left">
             <div>
                 <h2 id="titulo-page-projeto">Meus Projetos</h2>
             </div>
@@ -270,20 +270,6 @@
                 </div>
                 <div class="card-projeto">
                     <div class="div-img-projeto">
-                        <img src="images/criptos.gif" >
-                    </div>
-                    <div class="div-infos-projeto">
-                        <p>Bot Imagens</p>
-                        <p>Busca e inserção de imagens em planilha</p>
-                        <p>Tecnologias: python</p>
-                    </div>
-                    <div>
-                        <a href="https://github.com/GeovaniTech/automation-searching-product-images" target="_blank" class="redes-sociais"><img src="images/github_branco.png" alt=""></a>
-                        <a href="https://www.youtube.com/watch?v=smO3wTjcozs" target="_blank" class="redes-sociais"><img src="images/youtube.png" alt=""></a>
-                    </div>
-                </div>
-                <div class="card-projeto">
-                    <div class="div-img-projeto">
                         <img src="images/botkwai.gif" >
                     </div>
                     <div class="div-infos-projeto">
@@ -299,4 +285,27 @@
         </section>
     </main>
     </body>
+    <script>
+        // Animar todos os itens na tela que tiverem meu atributo data-anime
+
+        const item = document.querySelectorAll("[data-anime]");
+
+        const animeScroll = () => {
+        const windowTop = window.pageYOffset + window.innerHeight * 0.85 ;
+
+        item.forEach((element) => {
+            if (windowTop > element.offsetTop) {
+            element.classList.add("animate");
+            } else {
+            element.classList.remove("animate");
+            }
+        });
+        };
+
+        animeScroll();
+
+        window.addEventListener("scroll", ()=>{
+        animeScroll();
+        })
+    </script>
 </html>
