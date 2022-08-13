@@ -32,7 +32,7 @@
     </header>
 
     <main>
-        <section  id="inicio" data-anime="left">
+        <section class="reveal" id="inicio">
             <div id="infos-inicio">
                 <div>
                     <p id="ola" data-anime="left">Olá, Seja Bem-vindo(a)!</p>
@@ -53,7 +53,7 @@
             </div>
         </section>
 
-        <section id="sobre" data-anime="right">
+        <section id="sobre" class="reveal">
             <div>
                 <h2 id="titulo-page-sobre">Sobre <span style="color: var(--primary-color);">Mim</span></h2>
             </div>
@@ -71,7 +71,7 @@
             </div>
         </section>
 
-        <section id="tecnologias" data-anime="left">
+        <section id="tecnologias" class="reveal">
             <div>
                 <h2 class="titulo-page"><span style="color: var(--primary-color);">Tecnologias</span> que utilizo atualmente</h2>
             </div>
@@ -104,7 +104,7 @@
             </div>
         </section>
 
-        <section id="projetos" data-anime="left">
+        <section id="projetos" class="reveal">
             <div>
                 <h2 id="titulo-page-projeto">Meus Projetos</h2>
             </div>
@@ -284,28 +284,7 @@
             </div>
         </section>
     </main>
-    </body>
-    <script>
-        // Animar todos os itens na tela que tiverem meu atributo data-anime
-
-        const item = document.querySelectorAll("[data-anime]");
-
-        const animeScroll = () => {
-        const windowTop = window.pageYOffset + window.innerHeight * 0.85 ;
-
-        item.forEach((element) => {
-            if (windowTop > element.offsetTop) {
-            element.classList.add("animate");
-            } else {
-            element.classList.remove("animate");
-            }
-        });
-        };
-
-        animeScroll();
-
-        window.addEventListener("scroll", ()=>{
-        animeScroll();
-        })
+    <script src="scripts/index.js">
     </script>
+    </body>
 </html>
