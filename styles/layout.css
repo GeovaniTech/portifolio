@@ -101,11 +101,8 @@ html {
 }
 
 @media only screen and (max-width: 1110px) {
-    nav {
-        position: absolute;
-        top: 18vh;
-        right: 0;
-        width: 300px;
+    nav {  
+        display: none;
     }
  
     .mobile-menu {
