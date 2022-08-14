@@ -36,3 +36,9 @@
 #tecnologias {
     padding: 175px;
 }
+
+@media only screen and (max-width: 1110px) {
+    #tecnologias {
+        padding: 0px;
+    }
+}

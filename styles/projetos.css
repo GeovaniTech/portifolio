@@ -43,3 +43,34 @@
 .div-infos-projeto {
     margin: 10px;
 }
+
+@media only screen and (max-width: 1110px) {
+    .div-img-projeto > img {
+        width: 300px;
+        border-radius: 7px;
+    }
+
+    .div-img-projeto {
+        width: 300px;
+        text-align: center;
+    }
+
+    #container-projetos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-projeto {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        color: white;
+        width: 350px;
+    }
+}
