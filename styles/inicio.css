@@ -61,8 +61,33 @@
     width: 211px;
     border-radius: 3px;
     margin-bottom: 7px;
+    text-align: center;
 }
 
 #img-eu {
     width: 500px;
+}
+
+@media only screen and (max-width: 1110px) {
+    #inicio {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #infos-inicio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        margin-top: 20px;
+    }
+    
+    #img-eu {
+        height: 400px;
+        width: 300px;
+    }
 }
