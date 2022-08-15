@@ -13,29 +13,49 @@
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
 </head>
 <body>
+    <script>
+        function abrirMenu() {  
+            if(document.getElementById("menu-mobile").clientWidth == 0) {
+                document.getElementById("menu-mobile").style.right = "0px";
+                document.getElementById("menu-mobile").style.width = "50vw";
+            } else {
+                document.getElementById("menu-mobile").style.right = "-300px";
+                document.getElementById("menu-mobile").style.width = "0";
+            }
+        }
+
+    </script>
     <header>
         <div id="div-titulo">
             <p style="margin-right: 8px;">Desenvolvedor <span style="color: var(--primary-color); font-weight: bold;">Web</span></p>
         </div>
-        <div>
-            <div class="mobile-menu">
-                <div id="line1"></div>
-                <div id="line2"></div>
-                <div id="line3"></div>
-            </div>
 
-            <nav>
-                <ul id="menu">
-                    <a href="#inicio">Inicio</a>
-                    <a href="#sobre">Sobre</a>
-                    <a href="#tecnologias">Tecnologias</a>
-                    <a href="#projetos">Projetos</a>
-                    <a href="#">Certificações</a>
-                    <a href="#" id="btn-contato">Contato</a>
-                </ul>
-            </nav>
+        <div class="mobile-menu" onclick="abrirMenu()">
+            <div id="line1"></div>
+            <div id="line2"></div>
+            <div id="line3"></div>
         </div>
+
+        <nav id="menu-desktop">
+            <ul id="menu">
+                <a href="#inicio">Inicio</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#tecnologias">Tecnologias</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#">Certificações</a>
+                <a href="#" id="btn-contato">Contato</a>
+            </ul>
+        </nav>
     </header>
+
+    <nav id="menu-mobile">
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#tecnologias">Tecnologias</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#">Certificações</a>
+        <a href="#" id="btn-contato">Contato</a>
+    </nav>
 
     <main>
         <section class="reveal" id="inicio">
